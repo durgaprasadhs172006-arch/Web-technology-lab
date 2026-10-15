@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time tabke</title>
+        <style>
+            body{ font-family:Arial;background:#f5f5f5;}
+            table{width:95%;margin:25px auto;border-collapse:collapse;}
+            caption{font-size:24px;font-weight:bold;margin:10px;}
+            th,td{border:1px solid #333;padding:10px; text-align:center;}
+            thead th{background:#2c3e50;color:white;}
+            tfoot td{background:#d5dbdb;font-weight:bold;}
+            .row1 {background:#eaf2f8;}
+            .row2{background:#fef9e7;}
+            .lab{background:#fadbd8;font-weight:bold;}
+            .elective{background:#d5f5e3;font-weight:bold;}
+            .break{background:#d6eaf8;font-weight:bold;}
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Class Time Table</caption>
+            <thead>
+                <tr>
+                    <th rowsapn="2">Day</th>
+                    <th colspan="6">Time / Period</th>
+                </tr>
+                <tr>
+                     <th> </th><th>9-10</th><th>10-11</th><th>11-12</th>
+                     <th>12-1</th><th>2-3</th><th>3-4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row1">
+                    <td>Monday</td><td>WP</td><td>DBMS</td>
+                    <td class="lab" colspan="2">Web Programming Lab</td>
+                    <td>OS</td><td>Maths</td>
+                </tr>
+                <tr class="row2">
+                    <td >Tuesday</td><td>OS</td><td class="elective">Elective</td>
+                    <td>DBMS</td><td class="'break">lunch</td><td colpsan="2">Project Work</td>
+                </tr>
+                <tr class="row1">
+                    <td >Wednesday</td><td colspan="2">Web Programming</td>
+                    <td>OS</td><td>DBMS</td><td class="elective">Elective</td><td>Library</td>
+                </tr>
+                <tr class="row2">
+                    <td>Thursady</td><td>DBMS</td><td>OS</td>
+                    <td class="lab" colspan="2">DBMS Lab</td><td>WP</td><td>Seminar</td>
+                </tr>
+                <tr class="row1">
+                    <td>Friday</td><td>Maths</td><td>OS</td>
+                    <td>DBMS</td><td class="break">Lunch</td>
+                    <td class="elective" colspan="2">Elective</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="7">Legend:Lab=Laboratory|Elective=Elective Hour</td></tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
